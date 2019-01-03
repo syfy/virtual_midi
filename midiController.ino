@@ -37,10 +37,10 @@ void loop()
  MIDImessage(176,4,analogSensorValues[2]);        // 176 = CC command (channel 1 control change), 1 = Which Control, val = value read from Potentionmeter 1 NOTE THIS SAYS VAL not VA1 (lowercase of course)
    }
      if (analogSensorValues[3] != lastAnalogSensorValues[3]){
-   MIDImessage(176,5,analogSensorValues[3]);        // 176 = CC command (channel 1 control change), 1 = Which Control, val = value read from Potentionmeter 1 NOTE THIS SAYS VAL not VA1 (lowercase of course)
+  MIDImessage(176,5,analogSensorValues[3]);        // 176 = CC command (channel 1 control change), 1 = Which Control, val = value read from Potentionmeter 1 NOTE THIS SAYS VAL not VA1 (lowercase of course)
    }
 if (analogSensorValues[4] != lastAnalogSensorValues[4]){
-   //MIDImessage(176,6,analogSensorValues[4]);        // 176 = CC command (channel 1 control change), 1 = Which Control, val = value read from Potentionmeter 1 NOTE THIS SAYS VAL not VA1 (lowercase of course)
+   MIDImessage(176,6,analogSensorValues[4]);        // 176 = CC command (channel 1 control change), 1 = Which Control, val = value read from Potentionmeter 1 NOTE THIS SAYS VAL not VA1 (lowercase of course)
    }
  
    lastAnalogSensorValues[0] = analogSensorValues[0];
